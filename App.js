@@ -39,6 +39,64 @@ const App = () => {
     </ScrollView>
   );
 };
-
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#121212',
+  },
+  banner: {
+    height: 200,
+    justifyContent: 'flex-end',
+    padding: 16,
+  },
+  bannerText: {
+    color: 'white',
+    fontSize: 24,
+    fontWeight: 'bold',
+  },
+  sectionTitle: {
+    fontSize: 20,
+    color: 'white',
+    marginTop: 20,
+    marginLeft: 16,
+    marginBottom: 8,
+  },
+  playlistContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    padding: 10,
+  },
+  playlistCard: {
+    alignItems: 'center',
+  },
+  playlistImage: {
+    width: 120,
+    height: 120,
+    borderRadius: 10,
+  },
+  playlistName: {
+    color: 'white',
+    marginTop: 8,
+  },
+  songContainer: {
+    padding: 10,
+  },
+  songRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 16,
+  },
+  songImage: {
+    width: 60,
+    height: 60,
+    borderRadius: 6,
+    marginRight: 16,
+  },
+  songName: {
+    color: 'white',
+    fontSize: 16,
+  },
+});
 
 export default App;
+
