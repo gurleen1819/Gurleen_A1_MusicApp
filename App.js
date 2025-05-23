@@ -61,7 +61,7 @@ const App = () => {
   );
 };
 
-const style = StyleSheet.create({
+const styles= StyleSheet.create({
   appContainer: {
     flex: 1,
   },
@@ -147,15 +147,13 @@ const style = StyleSheet.create({
     color: 'white',
     marginTop: 2,
   },
-
-
   appContainer: {
     flex: 1,
   },
   container: {
     flex: 1,
     backgroundColor: '#121212',
-    paddingBottom: 80, // To avoid bottom nav overlap
+    paddingBottom: 80, 
   },
   banner: {
     height: 200,
