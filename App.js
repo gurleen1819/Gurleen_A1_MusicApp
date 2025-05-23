@@ -36,6 +36,14 @@ const App = () => {
             <Text style={styles.songName}>Peaches</Text>
           </View>
         </View>
+        <Text style={styles.sectionTitle}>Recently Played</Text>
+<View style={styles.songContainer}>
+  <View style={styles.songRow}>
+    <Image source={require('./assets/song2.jpg')} style={styles.songImage} />
+    <Text style={styles.songName}>Save Your Tears</Text>
+  </View>
+</View>
+
       </ScrollView>
 
       {/* 🔽 Bottom Navigation Bar */}
@@ -91,6 +99,7 @@ const styles= StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     padding: 10,
+    gap: 16,
   },
   playlistCard: {
     alignItems: 'center',
@@ -106,6 +115,7 @@ const styles= StyleSheet.create({
   },
   songContainer: {
     padding: 10,
+    gap: 12,
   },
   songRow: {
     flexDirection: 'row',
@@ -146,6 +156,7 @@ const styles= StyleSheet.create({
     fontSize: 12,
     color: 'white',
     marginTop: 2,
+     fontWeight: 'bold',
   },
   appContainer: {
     flex: 1,
