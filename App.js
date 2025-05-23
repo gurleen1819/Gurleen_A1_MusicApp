@@ -147,10 +147,8 @@ const style = StyleSheet.create({
     color: 'white',
     marginTop: 2,
   },
-});
 
 
-const styles = StyleSheet.create({
   appContainer: {
     flex: 1,
   },
