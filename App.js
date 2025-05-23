@@ -1,5 +1,7 @@
 import React from 'react';
-import { ScrollView, View, Text, Image, ImageBackground, StyleSheet } from 'react-native';
+import { ScrollView, View, Text, Image, ImageBackground, StyleSheet,TouchableOpacity} from 'react-native';
+
+
 
 const App = () => {
   return (
@@ -21,7 +23,7 @@ const App = () => {
   <View style={styles.playlistCard}>
     <Image source={require('./assets/playlist2.jpg')} style={styles.playlistImage} />
     <Text style={styles.playlistName}>Workout Hits</Text>
-  </View>
+  </View> 
   <View style={styles.playlistCard}>
     <Image source={require('./assets/playlist2.jpg')} style={styles.playlistImage} />
     <Text style={styles.playlistName}>Lo-fi Vibes</Text>
@@ -46,23 +48,43 @@ const App = () => {
           <View style={styles.songRow}>
             <Image source={require('./assets/song1.jpg')} style={styles.songImage} />
             <Text style={styles.songName}>Blinding Lights</Text>
+           <TouchableOpacity style={styles.heartButton}>
+  <Text style={styles.heartIcon}>❤️</Text>
+</TouchableOpacity>
+
           </View>
          
           <View style={styles.songRow}>
             <Image source={require('./assets/song2.jpg')} style={styles.songImage} />
             <Text style={styles.songName}>Peaches</Text>
+          <TouchableOpacity style={styles.heartButton}>
+  <Text style={styles.heartIcon}>❤️</Text>
+</TouchableOpacity>
+
           </View>
           <View style={styles.songRow}>
             <Image source={require('./assets/song2.jpg')} style={styles.songImage} />
             <Text style={styles.songName}>Peaches</Text>
+          <TouchableOpacity style={styles.heartButton}>
+  <Text style={styles.heartIcon}>❤️</Text>
+</TouchableOpacity>
+
           </View>
           <View style={styles.songRow}>
             <Image source={require('./assets/song2.jpg')} style={styles.songImage} />
             <Text style={styles.songName}>Peaches</Text>
+          <TouchableOpacity style={styles.heartButton}>
+  <Text style={styles.heartIcon}>❤️</Text>
+</TouchableOpacity>
+
           </View>
            <View style={styles.songRow}>
             <Image source={require('./assets/song2.jpg')} style={styles.songImage} />
             <Text style={styles.songName}>Peaches</Text>
+           <TouchableOpacity style={styles.heartButton}>
+  <Text style={styles.heartIcon}>❤️</Text>
+</TouchableOpacity>
+
           </View>
            
         </View>
@@ -148,6 +170,16 @@ const styles= StyleSheet.create({
     padding: 10,
     gap: 12,
   },
+ heartButton: {
+  marginLeft: 'auto',
+  paddingHorizontal: 10,
+},
+
+heartIcon: {
+  fontSize: 20,
+  color: 'white',
+},
+
   songRow: {
     flexDirection: 'row',
     alignItems: 'center',
