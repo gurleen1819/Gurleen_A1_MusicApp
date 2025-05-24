@@ -17,31 +17,35 @@ const App = () => {
 
         <Text style={styles.sectionTitle}>Your Playlists</Text>
        <View style={styles.playlistGrid}>
-  <View style={styles.playlistCard}>
+        
+    <TouchableOpacity style={styles.playlistCard}>
     <Image source={require('./assets/playlist1.jpg')} style={styles.playlistImage} />
     <Text style={styles.playlistName}>Chill Beats</Text>
-  </View>
-  <View style={styles.playlistCard}>
+  </TouchableOpacity>
+  <TouchableOpacity style={styles.playlistCard}>
     <Image source={require('./assets/playlist2.jpg')} style={styles.playlistImage} />
     <Text style={styles.playlistName}>No Love </Text>
-  </View> 
-  <View style={styles.playlistCard}>
+   </TouchableOpacity>
+  
+   <TouchableOpacity style={styles.playlistCard}>
     <Image source={require('./assets/playlist3.jpg')} style={styles.playlistImage} />
     <Text style={styles.playlistName}>Lo-fi Vibes</Text>
-  </View>
-  <View style={styles.playlistCard}>
+   </TouchableOpacity>
+  <TouchableOpacity style={styles.playlistCard}>
     <Image source={require('./assets/playlist4.jpg')} style={styles.playlistImage} />
     <Text style={styles.playlistName}>Level</Text>
-  </View>
-  <View style={styles.playlistCard}>
+  </TouchableOpacity>
+  <TouchableOpacity style={styles.playlistCard}>
+
     <Image source={require('./assets/playlist5.jpg')} style={styles.playlistImage} />
     <Text style={styles.playlistName}>Imagine</Text>
-  </View>
-  <View style={styles.playlistCard}>
+  </TouchableOpacity>
+  <TouchableOpacity style={styles.playlistCard}>
+ 
     <Image source={require('./assets/playlist6.jpg')} style={styles.playlistImage} />
     <Text style={styles.playlistName}>Excuses</Text>
+  </TouchableOpacity>
   </View>
-</View>
 
 
         <Text style={styles.sectionTitle}>Top Songs</Text>
@@ -179,6 +183,7 @@ const styles= StyleSheet.create({
     marginTop: 20,
     marginLeft: 16,
     marginBottom: 8,
+    fontWeight: 'bold',
   },
  
  
@@ -193,6 +198,9 @@ const styles= StyleSheet.create({
   playlistName: {
     color: 'white',
     marginTop: 8,
+    
+    
+
   },
  heartButton: {
   marginLeft: 'auto',
