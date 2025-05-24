@@ -49,42 +49,47 @@ const App = () => {
           <View style={styles.songRow}>
             <Image source={require('./assets/song1.jpg')} style={styles.songImage} />
             <Text style={styles.songName}>Let Her Go</Text>
-           <TouchableOpacity style={styles.heartButton}>
+          <View style={styles.heartButton}>
   <Text style={styles.heartIcon}>❤️</Text>
-</TouchableOpacity>
+</View>
+
 
           </View>
          
           <View style={styles.songRow}>
             <Image source={require('./assets/song2.jpg')} style={styles.songImage} />
             <Text style={styles.songName}>Obsessed</Text>
-          <TouchableOpacity style={styles.heartButton}>
+        <View style={styles.heartButton}>
   <Text style={styles.heartIcon}>❤️</Text>
-</TouchableOpacity>
+</View>
+
 
           </View>
           <View style={styles.songRow}>
             <Image source={require('./assets/song3.jpeg')} style={styles.songImage} />
             <Text style={styles.songName}>Stay</Text>
-          <TouchableOpacity style={styles.heartButton}>
+          <View style={styles.heartButton}>
   <Text style={styles.heartIcon}>❤️</Text>
-</TouchableOpacity>
+</View>
+
 
           </View>
           <View style={styles.songRow}>
             <Image source={require('./assets/song4.png')} style={styles.songImage} />
             <Text style={styles.songName}>Lover</Text>
-          <TouchableOpacity style={styles.heartButton}>
+         <View style={styles.heartButton}>
   <Text style={styles.heartIcon}>❤️</Text>
-</TouchableOpacity>
+</View>
+
 
           </View>
            <View style={styles.songRow}>
             <Image source={require('./assets/song5.jpeg')} style={styles.songImage} />
             <Text style={styles.songName}>Brown Munde</Text>
-           <TouchableOpacity style={styles.heartButton}>
+          <View style={styles.heartButton}>
   <Text style={styles.heartIcon}>❤️</Text>
-</TouchableOpacity>
+</View>
+
 
           </View>
            
@@ -157,10 +162,6 @@ const styles= StyleSheet.create({
     color: 'white',
     marginTop: 8,
   },
-  songContainer: {
-    padding: 10,
-    // gap: 12,
-  },
  heartButton: {
   marginLeft: 'auto',
   paddingHorizontal: 10,
@@ -170,9 +171,7 @@ heartIcon: {
   fontSize: 20,
   color: 'white',
 },
-
- 
-  songName: {
+songName: {
     color: 'white',
     fontSize: 16,
   },
@@ -202,17 +201,12 @@ heartIcon: {
     marginTop: 2,
      fontWeight: 'bold',
   },
-
-
-
-  playlistContainer: {
+playlistContainer: {
     flexDirection: 'row',
     justifyContent: 'space-around',
     padding: 10,
   },
- 
-
-  songContainer: {
+ songContainer: {
     padding: 10,
   },
   songRow: {
@@ -226,10 +220,7 @@ heartIcon: {
     borderRadius: 6,
     marginRight: 16,
   },
-
-
-
-  playlistGrid: {
+ playlistGrid: {
   flexDirection: 'row',
   flexWrap: 'wrap',
   justifyContent: 'space-between',
