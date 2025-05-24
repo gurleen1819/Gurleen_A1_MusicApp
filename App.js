@@ -22,23 +22,23 @@ const App = () => {
   </View>
   <View style={styles.playlistCard}>
     <Image source={require('./assets/playlist2.jpg')} style={styles.playlistImage} />
-    <Text style={styles.playlistName}>Workout Hits</Text>
+    <Text style={styles.playlistName}>No Love </Text>
   </View> 
   <View style={styles.playlistCard}>
-    <Image source={require('./assets/playlist2.jpg')} style={styles.playlistImage} />
+    <Image source={require('./assets/playlist3.jpg')} style={styles.playlistImage} />
     <Text style={styles.playlistName}>Lo-fi Vibes</Text>
   </View>
   <View style={styles.playlistCard}>
-    <Image source={require('./assets/playlist2.jpg')} style={styles.playlistImage} />
-    <Text style={styles.playlistName}>Focus Flow</Text>
+    <Image source={require('./assets/playlist4.jpg')} style={styles.playlistImage} />
+    <Text style={styles.playlistName}>Level</Text>
   </View>
   <View style={styles.playlistCard}>
-    <Image source={require('./assets/playlist2.jpg')} style={styles.playlistImage} />
-    <Text style={styles.playlistName}>Party Hits</Text>
+    <Image source={require('./assets/playlist5.jpg')} style={styles.playlistImage} />
+    <Text style={styles.playlistName}>Imagine</Text>
   </View>
   <View style={styles.playlistCard}>
-    <Image source={require('./assets/playlist2.jpg')} style={styles.playlistImage} />
-    <Text style={styles.playlistName}>Retro Mix</Text>
+    <Image source={require('./assets/playlist6.jpg')} style={styles.playlistImage} />
+    <Text style={styles.playlistName}>Excuses</Text>
   </View>
 </View>
 
@@ -47,7 +47,7 @@ const App = () => {
         <View style={styles.songContainer}>
           <View style={styles.songRow}>
             <Image source={require('./assets/song1.jpg')} style={styles.songImage} />
-            <Text style={styles.songName}>Blinding Lights</Text>
+            <Text style={styles.songName}>Let Her Go</Text>
            <TouchableOpacity style={styles.heartButton}>
   <Text style={styles.heartIcon}>❤️</Text>
 </TouchableOpacity>
@@ -56,31 +56,31 @@ const App = () => {
          
           <View style={styles.songRow}>
             <Image source={require('./assets/song2.jpg')} style={styles.songImage} />
-            <Text style={styles.songName}>Peaches</Text>
+            <Text style={styles.songName}>Obsessed</Text>
           <TouchableOpacity style={styles.heartButton}>
   <Text style={styles.heartIcon}>❤️</Text>
 </TouchableOpacity>
 
           </View>
           <View style={styles.songRow}>
-            <Image source={require('./assets/song2.jpg')} style={styles.songImage} />
-            <Text style={styles.songName}>Peaches</Text>
+            <Image source={require('./assets/song3.jpeg')} style={styles.songImage} />
+            <Text style={styles.songName}>Stay</Text>
           <TouchableOpacity style={styles.heartButton}>
   <Text style={styles.heartIcon}>❤️</Text>
 </TouchableOpacity>
 
           </View>
           <View style={styles.songRow}>
-            <Image source={require('./assets/song2.jpg')} style={styles.songImage} />
-            <Text style={styles.songName}>Peaches</Text>
+            <Image source={require('./assets/song4.png')} style={styles.songImage} />
+            <Text style={styles.songName}>Lover</Text>
           <TouchableOpacity style={styles.heartButton}>
   <Text style={styles.heartIcon}>❤️</Text>
 </TouchableOpacity>
 
           </View>
            <View style={styles.songRow}>
-            <Image source={require('./assets/song2.jpg')} style={styles.songImage} />
-            <Text style={styles.songName}>Peaches</Text>
+            <Image source={require('./assets/song5.jpeg')} style={styles.songImage} />
+            <Text style={styles.songName}>Brown Munde</Text>
            <TouchableOpacity style={styles.heartButton}>
   <Text style={styles.heartIcon}>❤️</Text>
 </TouchableOpacity>
