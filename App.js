@@ -95,7 +95,35 @@ const App = () => {
            
         </View>
 
-       
+       <Text style={styles.sectionTitle}>Audiobooks For You</Text>
+<View style={styles.audioGrid}>
+  <View style={styles.audioCard}>
+    <Image source={require('./assets/musicicon.jpg')} style={styles.audioIcon} />
+    <Text style={styles.audioTitle}>Atomic Habits</Text>
+  </View>
+  <View style={styles.audioCard}>
+    <Image source={require('./assets/musicicon.jpg')} style={styles.audioIcon} />
+    <Text style={styles.audioTitle}>The Psychology of Money</Text>
+  </View>
+  <View style={styles.audioCard}>
+    <Image source={require('./assets/musicicon.jpg')} style={styles.audioIcon} />
+    <Text style={styles.audioTitle}>Deep Work</Text>
+  </View>
+  <View style={styles.audioCard}>
+    <Image source={require('./assets/musicicon.jpg')} style={styles.audioIcon} />
+    <Text style={styles.audioTitle}>Can't Hurt Me</Text>
+  </View>
+   <View style={styles.audioCard}>
+    <Image source={require('./assets/musicicon.jpg')} style={styles.audioIcon} />
+    <Text style={styles.audioTitle}>Alone</Text>
+  </View>
+   <View style={styles.audioCard}>
+    <Image source={require('./assets/musicicon.jpg')} style={styles.audioIcon} />
+    <Text style={styles.audioTitle}>Love Me</Text>
+  </View>
+</View>
+
+
 
       </ScrollView>
 
@@ -232,6 +260,35 @@ playlistCard: {
   marginBottom: 20,
   alignItems: 'center',
 },
+audioGrid: {
+  flexDirection: 'row',
+  flexWrap: 'wrap',
+  justifyContent: 'space-between',
+  paddingHorizontal: 16,
+  marginBottom: 20,
+},
+
+audioCard: {
+  backgroundColor: '#333',
+  borderRadius: 8,
+  padding: 10,
+  width: '47%',
+  marginBottom: 12,
+  flexDirection: 'row',
+  alignItems: 'center',
+},
+
+audioIcon: {
+  width: 32,
+  height: 32,
+  marginRight: 10,
+},
+
+audioTitle: {
+  color: 'white',
+  fontSize: 14,
+  flexShrink: 1,
+}
 
 });
 
