@@ -6,7 +6,8 @@ import { ScrollView, View, Text, Image, ImageBackground, StyleSheet,TouchableOpa
 const App = () => {
   return (
     <View style={styles.appContainer}>
-      <ScrollView style={styles.container}>
+      <ScrollView style={styles.container} contentContainerStyle={{ paddingBottom: 120 }}>
+
         <ImageBackground
           source={require('./assets/banner.jpg')}
           style={styles.banner}
@@ -117,13 +118,13 @@ const App = () => {
 };
 
 const styles= StyleSheet.create({
-  appContainer: {
+   appContainer: {
     flex: 1,
   },
   container: {
     flex: 1,
     backgroundColor: '#121212',
-    paddingBottom: 80, 
+    paddingBottom: 100, 
   },
   banner: {
     height: 200,
@@ -142,19 +143,9 @@ const styles= StyleSheet.create({
     marginLeft: 16,
     marginBottom: 8,
   },
-  playlistContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    padding: 10,
-    paddingHorizontal: 10,
-    gap: 16,
-  },
  
-  playlistRow: {
-  flexDirection: 'row',
-  justifyContent: 'space-between',
-  marginBottom: 16,
-},
+ 
+
 
 
   playlistImage: {
@@ -168,7 +159,7 @@ const styles= StyleSheet.create({
   },
   songContainer: {
     padding: 10,
-    gap: 12,
+    // gap: 12,
   },
  heartButton: {
   marginLeft: 'auto',
@@ -180,17 +171,7 @@ heartIcon: {
   color: 'white',
 },
 
-  songRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginBottom: 16,
-  },
-  songImage: {
-    width: 60,
-    height: 60,
-    borderRadius: 6,
-    marginRight: 16,
-  },
+ 
   songName: {
     color: 'white',
     fontSize: 16,
@@ -221,46 +202,16 @@ heartIcon: {
     marginTop: 2,
      fontWeight: 'bold',
   },
-  appContainer: {
-    flex: 1,
-  },
-  container: {
-    flex: 1,
-    backgroundColor: '#121212',
-    paddingBottom: 80, 
-  },
-  banner: {
-    height: 200,
-    justifyContent: 'flex-end',
-    padding: 16,
-  },
-  bannerText: {
-    color: 'white',
-    fontSize: 24,
-    fontWeight: 'bold',
-  },
-  sectionTitle: {
-    fontSize: 20,
-    color: 'white',
-    marginTop: 20,
-    marginLeft: 16,
-    marginBottom: 8,
-  },
+
+
+
   playlistContainer: {
     flexDirection: 'row',
     justifyContent: 'space-around',
     padding: 10,
   },
  
-  playlistImage: {
-    width: 120,
-    height: 120,
-    borderRadius: 10,
-  },
-  playlistName: {
-    color: 'white',
-    marginTop: 8,
-  },
+
   songContainer: {
     padding: 10,
   },
@@ -275,35 +226,9 @@ heartIcon: {
     borderRadius: 6,
     marginRight: 16,
   },
-  songName: {
-    color: 'white',
-    fontSize: 16,
-  },
-  bottomNav: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    alignItems: 'center',
-    backgroundColor: '#1e1e1e',
-    paddingVertical: 10,
-    borderTopWidth: 1,
-    borderTopColor: '#333',
-    position: 'absolute',
-    bottom: 0,
-    left: 0,
-    right: 0,
-  },
-  navItem: {
-    alignItems: 'center',
-  },
-  navIcon: {
-    fontSize: 20,
-    color: 'white',
-  },
-  navLabel: {
-    fontSize: 12,
-    color: 'white',
-    marginTop: 2,
-  },
+
+
+
   playlistGrid: {
   flexDirection: 'row',
   flexWrap: 'wrap',
@@ -312,7 +237,7 @@ heartIcon: {
 },
 
 playlistCard: {
-  width: '30%', // roughly 3 per row with spacing
+  width: '30%', 
   marginBottom: 20,
   alignItems: 'center',
 },
