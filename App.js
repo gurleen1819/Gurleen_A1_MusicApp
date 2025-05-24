@@ -49,9 +49,9 @@ const App = () => {
           <View style={styles.songRow}>
             <Image source={require('./assets/song1.jpg')} style={styles.songImage} />
             <Text style={styles.songName}>Let Her Go</Text>
-          <View style={styles.heartButton}>
+          <TouchableOpacity style={styles.heartButton}>
   <Text style={styles.heartIcon}>❤️</Text>
-</View>
+</TouchableOpacity>
 
 
           </View>
@@ -59,68 +59,72 @@ const App = () => {
           <View style={styles.songRow}>
             <Image source={require('./assets/song2.jpg')} style={styles.songImage} />
             <Text style={styles.songName}>Obsessed</Text>
-        <View style={styles.heartButton}>
+       <TouchableOpacity style={styles.heartButton}>
   <Text style={styles.heartIcon}>❤️</Text>
-</View>
+</TouchableOpacity>
 
 
           </View>
           <View style={styles.songRow}>
             <Image source={require('./assets/song3.jpeg')} style={styles.songImage} />
             <Text style={styles.songName}>Stay</Text>
-          <View style={styles.heartButton}>
+        <TouchableOpacity style={styles.heartButton}>
   <Text style={styles.heartIcon}>❤️</Text>
-</View>
+</TouchableOpacity>
 
 
           </View>
           <View style={styles.songRow}>
             <Image source={require('./assets/song4.png')} style={styles.songImage} />
             <Text style={styles.songName}>Lover</Text>
-         <View style={styles.heartButton}>
+        <TouchableOpacity style={styles.heartButton}>
   <Text style={styles.heartIcon}>❤️</Text>
-</View>
+</TouchableOpacity>
 
 
           </View>
            <View style={styles.songRow}>
             <Image source={require('./assets/song5.jpeg')} style={styles.songImage} />
             <Text style={styles.songName}>Brown Munde</Text>
-          <View style={styles.heartButton}>
+         <TouchableOpacity style={styles.heartButton}>
   <Text style={styles.heartIcon}>❤️</Text>
-</View>
+</TouchableOpacity>
 
 
           </View>
            
         </View>
-
-       <Text style={styles.sectionTitle}>Audiobooks For You</Text>
+<Text style={styles.sectionTitle}>Audiobooks For You</Text>
 <View style={styles.audioGrid}>
-  <View style={styles.audioCard}>
+  <TouchableOpacity style={styles.audioCard}>
     <Image source={require('./assets/musicicon.jpg')} style={styles.audioIcon} />
     <Text style={styles.audioTitle}>Atomic Habits</Text>
-  </View>
-  <View style={styles.audioCard}>
+  </TouchableOpacity>
+
+  <TouchableOpacity style={styles.audioCard}>
     <Image source={require('./assets/musicicon.jpg')} style={styles.audioIcon} />
     <Text style={styles.audioTitle}>The Psychology of Money</Text>
-  </View>
-  <View style={styles.audioCard}>
+  </TouchableOpacity>
+
+  <TouchableOpacity style={styles.audioCard}>
     <Image source={require('./assets/musicicon.jpg')} style={styles.audioIcon} />
     <Text style={styles.audioTitle}>Deep Work</Text>
-  </View>
-  <View style={styles.audioCard}>
+  </TouchableOpacity>
+
+  <TouchableOpacity style={styles.audioCard}>
     <Image source={require('./assets/musicicon.jpg')} style={styles.audioIcon} />
     <Text style={styles.audioTitle}>Can't Hurt Me</Text>
-  </View>
-   <View style={styles.audioCard}>
+  </TouchableOpacity>
+
+  <TouchableOpacity style={styles.audioCard}>
     <Image source={require('./assets/musicicon.jpg')} style={styles.audioIcon} />
     <Text style={styles.audioTitle}>Alone</Text>
-  </View>
-   <View style={styles.audioCard}>
+  </TouchableOpacity>
+
+  <TouchableOpacity style={styles.audioCard}>
     <Image source={require('./assets/musicicon.jpg')} style={styles.audioIcon} />
     <Text style={styles.audioTitle}>Love Me</Text>
-  </View>
+  </TouchableOpacity>
 </View>
 
 
